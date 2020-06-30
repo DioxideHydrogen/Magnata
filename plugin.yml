@@ -1,0 +1,11 @@
+name: Magnata
+authors: [Hugo Henrique]
+version: 1.0
+softdepend: [Essentials, EssentialsChat, Vault, GroupManager]
+main: magnata.Main
+description: Adiciona autmaticamente o prefixo de Magnata ao player com mais dinheiro.
+commands:
+    magnata:
+        aliases: [rich]
+        permission-message: Voce nao pode usar esse comando (magnata.rich)
+        description: Retorna o player mais rico do servidor
