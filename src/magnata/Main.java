@@ -34,9 +34,9 @@ public class Main extends JavaPlugin {
         	 jsonObject = (JSONObject) parser.parse(new FileReader(System.getProperty("user.dir") + "\\plugins\\Magnata\\config.json"));
         	 magnata = (String) jsonObject.get("magnata");
         	 maiorValor = (double) jsonObject.get("dinheiro");
-        	 getLogger().info("[Magnata v1.0] Arquivo de configurações carregado.");
+        	 getLogger().info("[Magnata v1.0] Arquivo de configuraÃ§Ãµes carregado.");
         } catch (FileNotFoundException e) {
-        	getLogger().info("[Magnata v1.0] Não foi possível encontrar o arquivo de configurações. Criando...");
+        	getLogger().info("[Magnata v1.0] NÃ£o foi possÃ­vel encontrar o arquivo de configuraÃ§Ãµes. Criando...");
         } catch (IOException e) {
         	e.printStackTrace();
         } catch (ParseException e) {
@@ -140,12 +140,6 @@ public class Main extends JavaPlugin {
 					if(dinheiro > maiorValor) {
 						maiorValor = dinheiro;
 						magnata = jogador.getName();
-//					if(novoMagnata != magnata) {
-//						Bukkit.broadcastMessage(ChatColor.GREEN + "Parabéns " + novoMagnata + " você se tornou o Magnata!");						
-//					} if(novoMagnata != jogador.getName()) {
-//						jogador.sendMessage(ChatColor.RED + "Você ainda não está com dinheiro suficiente!");
-//					} if (novoMagnata == magnata && jogador.getName() == magnata) {
-//						jogador.sendMessage(ChatColor.RED + "Você já é o Magnata, continue assim!");
 //					}
 						
 					}
@@ -153,7 +147,7 @@ public class Main extends JavaPlugin {
 				}
 				
 				setMagnata(magnata, maiorValor);
-				Bukkit.broadcastMessage(ChatColor.GREEN + "Parabéns " + magnata + " você se tornou o Magnata!");
+				Bukkit.broadcastMessage(ChatColor.GREEN + "ParabÃ©ns " + magnata + " vocÃª se tornou o Magnata!");
 				
 			}
 		}
